@@ -1,0 +1,117 @@
+.header {
+  &>.top {
+    background-image: url(../images/headerPic/headerBar.png);
+    height: 180px;
+    line-height: 30px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+
+    .container {
+      width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+
+      .loginList {
+        float: left;
+        p {
+          float: left;
+          margin-right: 10px;
+
+          .register {
+            border-left: 1px solid #b3aeae;
+            padding: 0 5px;
+            margin-left: 5px;
+          }
+        }
+      }
+
+      .typeList {
+        float: right;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+
+        a {
+          padding: 0 10px;
+          color: #ffffff;
+
+          &+a {
+            border-left: 1px solid #b3aeae;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  &>.bottom {
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .logoArea {
+      float: left;
+
+      .logo {
+        img {
+          width: 175px;
+          margin: 25px 45px 5px 45px;
+        }
+      }
+    }
+    .logo-text{
+      text-align: center;
+    }
+    .searchArea {
+      float: right;
+      margin-top: 55px;
+
+      .searchForm {
+        overflow: hidden;
+
+        input {
+          border-top-left-radius: 6px;
+          border-bottom-left-radius: 6px;
+          box-sizing: border-box;
+          width: 490px;
+          height: 32px;
+          padding: 0px 4px;
+          border: 2px solid #aac7fa;
+          float: left;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        button {
+          height: 32px;
+          width: 68px;
+          background: linear-gradient(to right, blue, purple, green);
+          border: none;
+          color: #fff;
+          float: left;
+          cursor: pointer;
+          border-top-right-radius: 6px;
+          border-bottom-right-radius: 6px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+}
+.user-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+.user-login {
+  line-height: 32px;
+  vertical-align: middle;
+}
